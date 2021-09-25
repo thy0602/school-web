@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body { /* Remove default left padding */
+            margin: 0;
+            padding: 0;
+        }
+        .text {
+            color: white;
+        }
+        #blue-background {
+            background: #98befa;
+            background: -moz-linear-gradient(top, #98befa 0%, #4287f5 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#98befa), color-stop(100%,#4287f5)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, #98befa 0%,#4287f5 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top,  #98befa 0%,#4287f5 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top,  #98befa 0%,#4287f5 100%); /* IE10+ */
+            background: linear-gradient(top,  #98befa 0%,#4287f5 100%); /* W3C */
+        }
+        #yellow-background{
+            background: #fcba03; /* Old browsers */
+            background: -moz-linear-gradient(top, #fcd29a 0%, #de8b04 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcd29a), color-stop(100%,#de8b04)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, #fcd29a 0%,#de8b04 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top,  #fcd29a 0%,#de8b04 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top,  #fcd29a 0%,#de8b04 100%); /* IE10+ */
+            background: linear-gradient(top,  #fcd29a 0%,#de8b04 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcd29a', endColorstr='#de8b04',GradientType=0 ); 
+        }
+        .header {
+            display: flex;
+            width: 100%;
+            height: 40px;
+            border: solid 1px #c7c7c7;
+            padding-left: 0px;
+            overflow: hidden;
+            position: fixed;
+            top: 0; /* not be affected by the next tag (margin-top) */
+        }
+        .about {
+            flex-grow: 0.2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .products {
+            flex-grow: 0.2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .team {
+            flex-grow: 0.2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .between {
+            flex-grow: 2;
+        }
+        .contact {
+            flex-grow: 0.2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .main-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 300px;
+            font-size: 100px;
+            margin-top: 40px;
+            width: 100%;
+        }
+        .footer {
+            /* width: 100%; */
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: solid 1px #c7c7c7;
+        }
+
+        @media only screen and (min-width: 651px) {
+            .container {
+                display: grid;
+                width: 100%;
+                grid-template-columns: auto auto auto;
+                grid-template-rows: 300px 300px 300px;
+                grid-gap: 0.75rem;
+            }
+            .cell {
+                background-color: #586273;
+                border: solid 1px black;
+                margin: 5px;
+                font-size: 100px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+        @media only screen and (max-width: 650px) {
+            .container {
+                display: grid;
+                width: 100%;
+                grid-template-columns: auto auto;
+                grid-template-rows: 150px 150px 150px 150px;
+                grid-gap: 0.75rem;
+            }
+            .cell {
+                background-color: #586273;
+                border: solid 1px black;
+                margin: 10px;
+                font-size: 50px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header text" id="blue-background">
+        <div class="about"> About</div>
+        <div class="products"> Products</div>
+        <div class="team">  Our Teams</div>
+        <div class="between"></div>
+        <div class="contact"> Contact </div>
+    </div>
+    <div class=main-icon> 🌌 </div>
+    <div class="container" id="blue-background">
+        <div class="cell">🚗</div>
+        <div class="cell">🛺</div>
+        <div class="cell">🛵</div>
+        <div class="cell">🚂</div>
+        <div class="cell">✈</div>
+        <div class="cell">🛸</div>
+        <div class="cell">🏰</div>
+        <div class="cell">🛥</div>
+    </div> 
+   
+    <div class="footer text" id="yellow-background"> FOOTER 
+    </div>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        .page {
+            display:flex;
+            justify-content:center;
+        }
+        .yellow{
+            background: #fcba03; /* Old browsers */
+            background: -moz-linear-gradient(top, #fcd29a 0%, #de8b04 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fcd29a), color-stop(100%,#de8b04)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, #fcd29a 0%,#de8b04 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top,  #fcd29a 0%,#de8b04 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top,  #fcd29a 0%,#de8b04 100%); /* IE10+ */
+            background: linear-gradient(top,  #fcd29a 0%,#de8b04 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcd29a', endColorstr='#de8b04',GradientType=0 ); /* IE6-9 */
+        }
+        .green{
+            background: #cdeb8e; /* Old browsers */
+            background: -moz-linear-gradient(top, #0ba10e 0%, #a5c956 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0ba10e), color-stop(100%,#a5c956)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, #0ba10e 0%,#a5c956 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top, #0ba10e 0%,#a5c956 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top, #0ba10e 0%,#a5c956 100%); /* IE10+ */
+            background: linear-gradient(top, #0ba10e 0%,#a5c956 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0ba10e', endColorstr='#a5c956',GradientType=0 ); /* IE6-9 */
+        }
+        .purple{
+            background:  #983eb3; /* Old browsers */
+            background: -moz-linear-gradient(top,  #983eb3 0%, #e398fa 50%,#e9c1f5 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #983eb3), color-stop(0%, #e398fa), color-stop(100%,#e9c1f5)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top,  #983eb3 0%, #e398fa 50%,#e9c1f5 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top,  #983eb3 0%, #e398fa 50%,#e9c1f5 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top,  #983eb3 0%, #e398fa 50%,#e9c1f5 100%); /* IE10+ */
+            background: linear-gradient(top,  #983eb3 0%, #e398fa 50%,#e9c1f5 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#983eb3', endColorstr='#e9c1f5',GradientType=0 );
+        }
+        .container {
+            display: block;
+            width: 80vw;
+            height: 80vh;
+        }
+        .header {
+            width: 100%;
+            height: 10%;
+            min-height: 50px;
+        }
+        .side {
+            height: 100%;
+            flex-grow: 0.5;
+            min-height: 200px;
+        }
+        .content {
+            height: 100%;
+            flex-grow: 2;
+            min-height: 200px;
+        }
+        .footer {
+            width: 100%;
+            height: 10%;
+            min-height: 50px;
+        }
+        .container-body {
+            display: flex;
+            width: 100%;
+            height: 80%;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <div class="container">
+            <div class="header yellow"> <br/> HEADER </div>
+            <div class="container-body">
+                <div class="side green"> <br/> SIDE </div>
+                <div class="content purple"> <br/> CONTENT</div>
+            </div>
+            <div class="footer yellow"> <br/> FOOTER </div>
+        </div>
+    </div>
+    
+</body>
+</html>
