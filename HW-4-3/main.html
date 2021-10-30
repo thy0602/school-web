@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0-rc.3/jquery-ui.min.js"></script>
+</head>
+
+<body>
+
+    <div class="screen">
+        <div class="container" id="container">
+            <div class="title">
+                Register
+            </div>
+            <form>
+                <div class="form-group">
+                    <div class="label">Full name</div>
+                    <!-- oninput="onChange(event, this.id)" -->
+                    <input type="text" id="name">
+                    <div class="noti" id="noti-name">
+                        Name must be capitalized
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="label">Username</div>
+                    <input type="text" id="username">
+                    <div class="noti" id="noti-username">
+                        Only characters, digits and _, no spaces and no starts with a digit
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="label">Email</div>
+                    <input type="text" id="email">
+                    <div class="noti" id="noti-email">
+                        It's not a valid email
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="label">Phone</div>
+                    <input type="text" id="phone">
+                    <div class="noti" id="noti-phone">
+                        Should be 10 numbers, starting with 0
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="label">Date of birth</div>
+                    <input type="text" id="birth">
+                    <div class="noti" id="noti-birth">
+                        Should be a valid date in format dd/mm/yyyy, the age is in range [15,55]
+                    </div>
+                </div>
+
+                <div class="button-container">
+                    <input type="button" class="button" value="SUBMIT" id="btn"></input>
+                </div>
+            </form>
+        </div>
+        <span class="material-icons-outlined"
+            style="font-size:100px;color:green;text-shadow:2px 2px 4px #000000;position:absolute;left:45%;top:250px;visibility: hidden;"
+            id="icon">
+            task_alt
+        </span>
+    </div>
+
+    <script src="index.js"></script>
+    <!-- <script>
+        // $("input").change(function (event) {
+        //     console.log(event.target.value);
+        //     $(this).val(event.target.value);
+        // });
+        function calculate() {
+            let name = document.getElementById("name").value;
+            // let name = $("#name").val();
+            console.log("hello");
+            console.log(name);
+            alert(name);
+        }
+    </script> -->
+</body>
+
+</html>

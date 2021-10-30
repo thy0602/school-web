@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href='https://fonts.googleapis.com/css?family=Arial' rel='stylesheet'>
+    <style>
+        body {
+            color: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            text-transform: upper;
+            letter-spacing: .5em;
+            top: 15%;
+            background: linear-gradient(to right, #f5cd1b, #079ade);
+        }
+
+        .text1 {
+            font-family: "Arial";
+            font: 600 3.5em;
+            color: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 5em;
+            letter-spacing: .5em;
+            width: 100%;
+        }
+
+        .text2 {
+            font: 600 3.5em;
+            color: rgba(0, 0, 0, 0.5);
+            text-align: center;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-size: 30px;
+            letter-spacing: .5em;
+            width: 100%;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+
+<body>
+    <!-- Search: CSS linear-gradient -->
+    <br />
+    <div class="text1"> background </div>
+    <div class="text1"> generator</div>
+    <div style="margin-top:30px;margin-bottom:20px">
+        <input type="color" id="color1" value="#f5cd1b">
+        <input type="color" id="color2" value="#079ade">
+    </div>
+
+    <div class="text2"> current css background </div>
+
+    <script type="text/javascript">
+        // Select type = color
+        // $('input[type="color"]').bind('input', function () {
+        //     let c1 = $('#color1').val();
+        //     let c2 = $('#color2').val();
+        //     $('body').css('background', `linear-gradient(to right, ${c1}, ${c2})`);
+        // });
+
+        function changeColor() {
+            // console.log("color1:", $(this).val());
+            let c1 = $('#color1').val();
+            let c2 = $('#color2').val();
+            $('body').css('background', `linear-gradient(to right, ${c1}, ${c2})`);
+        }
+        // Select type = color
+        $('input[type="color"]').bind('input', changeColor);
+        changeColor();
+    </script>
+</body>
+
+</html>
