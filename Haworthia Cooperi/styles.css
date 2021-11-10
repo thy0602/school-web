@@ -1,0 +1,93 @@
+body {
+  background: url("./images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+
+  -webkit-background-size: 100% 100%;
+  -moz-background-size: 100% 100%;
+  -o-background-size: 100% 100%;
+  background-size: 100% 100%;
+
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  margin: 0px;
+  padding: 0px;
+  top: 0px;
+}
+
+h1 {
+  text-align: center;
+  padding-top: 5%;
+}
+
+img {
+  width: 400px;
+  height: 300px;
+  padding-left: 5%;
+}
+
+.card-picture {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 1s;
+  width: 450px;
+  height: 350px;
+  margin-right: 50px;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
+}
+
+.card-picture:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.card-info {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 450px;
+  height: 50px;
+  padding-left: 5%;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+}
+
+.card-info:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.onclick:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+h2 {
+  text-align: center;
+}
+
+.card-info-group {
+  width: 500px;
+  margin-left: 50px;
+}
+
+.card-stuff {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+p {
+  font-family: "Roboto";
+}
+
+h1 {
+  font-family: "Roboto";
+}
+
+h2 {
+  font-family: "Roboto";
+}
